@@ -1,0 +1,109 @@
+/* Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #80c6ff;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#header-time-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left, .header-center, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+#live-time {
+    font-size: 1em;
+    font-weight: normal;
+    color: #2b2b61;
+}
+
+/* Emoji Day Planner Logo Styling */
+.emoji-planner-header {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.emoji-word, .day-word, .planner-word {
+    font-size: 1em;
+    font-weight: normal;
+    color: #333;
+}
+
+/* UI Adjustments */
+#emoji-deck {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    transition: max-height 0.3s ease;
+}
+
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.emoji-placeholder {
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+}
+
+/* Rating Button Styling */
+.rating-buttons .rating-button {
+    background-color: #80c6ff;
+    border: 3px solid #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+.rating-button.selected {
+    background-color: #4CAF50;
+}
+
+/* Reset Button Styling */
+#reset-button {
+    margin-top: 10px;
+    background-color: #f44336;
+    border: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.rating-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.custom-text-inputs input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
