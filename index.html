@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emoji Day Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Embed the new font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="header-time-container">
+            <div class="header-left">
+                <span id="live-time">--:--:--</span>
+            </div>
+            <div class="header-center">
+                <!-- Emoji Day Planner Logo Component -->
+                <div class="emoji-planner-header">
+                    <div class="emoji-word">Emoji</div>
+                    <div class="day-word">Day</div>
+                    <div class="planner-word">Planner</div>
+                    <div class="emoji-icons">
+                        <span class="emoji-icon">😊</span>
+                        <span class="emoji-icon">💜</span>
+                        <span class="emoji-icon">✅</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <!-- Emoji gear icon for settings -->
+                <button id="toggle-emoji-deck-button" class="icon-button">⚙️</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Emoji Deck -->
+    <div id="emoji-deck" class="emoji-deck hidden">
+        <div class="navigation-buttons">
+            <button id="prev-category" class="nav-button">◀️</button>
+            <span id="category-name">Smileys</span>
+            <button id="next-category" class="nav-button">▶️</button>
+        </div>
+        <div class="deck-body">
+            <div id="emoji-grid" class="emoji-grid"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="sectors-container">
+            <div class="sector" id="morning-sector">
+                <div class="sector-header">
+                    <h2>Morning</h2>
+                    <button class="check-button" data-sector="morning">✔️</button>
+                </div>
+                <div class="emoji-placeholders">
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                </div>
+            </div>
+            <div class="sector" id="midday-sector">
+                <div class="sector-header">
+                    <h2>Midday</h2>
+                    <button class="check-button" data-sector="midday">✔️</button>
+                </div>
+                <div class="emoji-placeholders">
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                </div>
+            </div>
+            <div class="sector" id="evening-sector">
+                <div class="sector-header">
+                    <h2>Evening</h2>
+                    <button class="check-button" data-sector="evening">✔️</button>
+                </div>
+                <div class="emoji-placeholders">
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                    <div class="emoji-placeholder"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer with Rating and Reset Button -->
+        <footer>
+            <div class="custom-text-inputs">
+                <input type="text" placeholder="Enter your morning thoughts...">
+                <input type="text" placeholder="Enter your midday thoughts...">
+                <input type="text" placeholder="Enter your evening thoughts...">
+            </div>
+            <div class="day-rating">
+                <span>Rate your day:</span>
+                <div class="rating-buttons">
+                    <button class="rating-button" data-rating="1">👍</button>
+                    <button class="rating-button" data-rating="2">👍</button>
+                    <button class="rating-button" data-rating="3">👍</button>
+                    <button class="rating-button" data-rating="4">👍</button>
+                    <button class="rating-button" data-rating="5">👍</button>
+                </div>
+            </div>
+            <button id="reset-button">Reset</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
